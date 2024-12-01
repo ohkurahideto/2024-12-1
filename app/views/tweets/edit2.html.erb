@@ -1,0 +1,32 @@
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :費用を入力してください %>
+    <%= f.text_field :plan, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :座標を入力してください %>
+    <%= f.text_field :plan, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :利点を入力してください %>
+    <%= f.text_field :plan, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :欠点を入力してください %>
+    <%= f.text_field :plan, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", tweets_path %>

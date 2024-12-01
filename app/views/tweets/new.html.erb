@@ -1,0 +1,10 @@
+<h1>新しい旅程を作る</h1>
+<h3>旅行の名前を入力してください</h3>
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :旅行の名前を入力してください %>
+    <%= f.text_field :plan, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", tweets_path %>
